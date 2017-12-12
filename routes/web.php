@@ -22,6 +22,7 @@ Route::get('mentor/edit', function () {
 });
 Route::get('mentor/edit/{id}', ['middleware' => 'mentor', 'uses' => 'Pages@mentor_edit']);
 Route::get('learn', 'Pages@learn');
+Route::get('next', "Pages@next");
 Route::get('learn/apply', 'Pages@apply');
 Route::get('hire', 'Pages@hire');
 Route::get('hire/graduates', 'Pages@graduates');

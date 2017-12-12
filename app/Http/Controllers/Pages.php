@@ -34,6 +34,13 @@ class Pages extends Controller
         return view('pages.learn', $data);
     }
 
+    public function next()
+    {
+        $data = $this->fetch_content();
+        $data['title'] = 'Whats Next?';
+        return view('pages.next', $data);
+    }
+
     public function apply()
     {
         $data = $this->fetch_content();
